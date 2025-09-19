@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Обязанности по дому каждого кота</title>
+  <style>
+    :root{--bg:#f7f6f2;--card:#ffffff;--accent:#c28bff;--muted:#666}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#f0edf9, #f7f6f2); margin:0; padding:24px; color:#222}
+    .wrap{max-width:980px;margin:0 auto}
+    header{display:flex;gap:16px;align-items:center}
+    header img{border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    h1{font-size:2rem;margin:0}
+    .lead{color:var(--muted);margin-top:6px}
+    main.card{background:var(--card);padding:20px;border-radius:14px;margin-top:18px;box-shadow:0 8px 30px rgba(43,20,60,.06)}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+    a.button{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .duties ol{padding-left:1.1rem}
+    .duties li{margin:10px 0}
+    .note{background:#fff9c4;padding:10px;border-radius:8px;margin:10px 0}
+    footer{font-size:.9rem;color:var(--muted);margin-top:18px}
+    .meta{font-size:.9rem;color:var(--muted);margin-bottom:8px}
+    .inline{display:inline-block}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    img.pet{width:100%;height:auto;border-radius:10px;display:block}
+    .small{font-size:.9rem}
+    mark{background:linear-gradient(90deg,#fff29a,#ffd3a6);padding:2px 6px;border-radius:4px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="https://masterpiecer-images.s3.yandex.net/5f9d1d53270ebbd:upscaled" alt="Кот" title="Милый кот" width="120" height="120">
+      <div>
+        <h1>Обязанности по дому каждого кота</h1>
+        <div class="lead">Весёлое и строгое руководство по тому, как коты <em>должны</em> заботиться о своих людях.</div>
+      </div>
+    </header>
+
+    <main class="card" role="main">
+      <div class="meta">Любите своих котиков!</div>
+
+      <div class="controls">
+        <a class="button" href="#duties" target="_self" title="Перейти к обязанностям">Перейти к обязанностям</a>
+        <a class="button" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%82" target="_blank" title="Коты в Википедии">Про котов (Вики)</a>
+        <a class="button" href="#photo" target="_top" title="Раздел с фото">Фото питомца</a>
+      </div>
+
+      <hr>
+
+      <section id="intro">
+        <h2>Краткое введение</h2>
+        <p>Ниже — <strong>полный</strong> перечень обязанностей кота.</p>
+      </section>
+
+      <div class="two-col">
+        <section id="duties" class="duties">
+          <h3>Обязанности</h3>
+          <ol>
+            <li>Кот должен отсыпаться за <strong>человека</strong>, всех его родственников, друзей и соседей вместе взятых.</li>
+            <li>Кот должен защищать человека от <em>комнатных растений</em>.</li>
+            <li>Кот постоянно должен поддерживать человека в форме, заставляя его непрестанно двигаться по квартире, нагибаться, собирая ручки, карандаши, носки и т. д.</li>
+            <li>Кот должен крепко держать зубами ручку или карандаш, пока человек пытается писать.</li>
+            <li>Кот постоянно должен проводить ревизию в холодильнике, даже если человек этого не хочет. Если он не хочет, значит, что-то там прячет.</li>
+            <li>Кот должен ночью каждый час проверять, не заползла ли под одеяло человеку какая-нибудь змея.</li>
+            <li>Кот время от времени должен тренировать себя на случай непредвиденного циркового выступления: прыжки с гардины на люстру и обратно.</li>
+            <li>Кот должен помогать человеку стелить постель, внимательно наблюдая, чтобы под простыней не оказалось никаких предметов.</li>
+            <li>Кот должен помнить, что сон для человека – это пустая трата времени, поэтому необходимо разбудить человека прыжком на живот или голову.</li>
+            <li>Кот должен каждое утро напоминать человеку пословицу: «Кто рано встает, тому Бог дает».</li>
+            <li>Кот должен делиться всем, что у него есть: часть меха, еда (часто — на пол).</li>
+            <li>Кот должен петь песни, чтобы доставлять человеку радость, даже если песни грустные.</li>
+            <li>Кот должен проверять, почему кто-то не закрыл шкаф или тумбочку.</li>
+            <li>Кот должен отгонять от человека плохие сны: прыгнуть на голову и начать урчать.</li>
+            <li>Кот должен знать, что лежит во всех коробках и пакетах, и на личном опыте убедиться, насколько там удобно.</li>
+            <li>Кот должен во время сна человека заглушать наружный шум, громко урча под ухом.</li>
+          </ol>
+
+         
+          <h4>Некоторые дополнительные заметки</h4>
+          <p class="small">Можно оформить этот список как <i>маркированный</i> (<code>&lt;ul&gt;</code>) или добавить подпункты. Ниже — пример маркированного списка важных вещей:</p>
+
+          <ul>
+            <li><b>Еда</b> — всегда под контролем кота.</li>
+            <li><b>Уголки для сна</b> — везде, где есть человек.</li>
+            <li><b>Опасные предметы</b> — досмотр обязателен.</li>
+          </ul>
+
+        </section>
+
+        <aside id="photo">
+          <h3>Фото питомца</h3>
+          <p class="small">Здесь показан мой питомец.</p>
+          <div>
+            <img class="pet" src="https://images.unsplash.com/photo-1758296878339-45be0b2dc837?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D" alt="Фото кота" title="Мой питомец" width="600" height="400">
+            <p class="small"> <em>Мой кот считает,что может помочь мне с написанием кода лабораторной.</em>.</p>
+          </div>
+        </aside>
+      </div>
+
+      <hr>
+
+      
+  </div>
+</body>
+</html>
